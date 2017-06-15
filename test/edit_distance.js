@@ -39,3 +39,5 @@ describe('common', function () {
         assert.equal(3, editDistance('abc', 'bbacd', 3, 5));
     })
 });
+
+// 重要声明！！ 本算法性能测试请参考这里：https://jsperf.com/edit-distance-test2
