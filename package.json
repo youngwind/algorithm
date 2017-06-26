@@ -7,7 +7,8 @@
     "test": "mocha"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test_quick_sort": "mocha test/quick_sort.js -w"
   },
   "repository": {
     "type": "git",
