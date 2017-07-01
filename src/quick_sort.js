@@ -25,3 +25,10 @@ function quickSort(array) {
 }
 
 module.exports = quickSort;
+
+/**
+ * 参考资料：
+ * 1. http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html
+ * 2. http://blog.csdn.net/hguisu/article/details/7776068
+ * 3. http://blog.csdn.net/jnu_simba/article/details/9705111
+ */
