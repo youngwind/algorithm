@@ -7,9 +7,10 @@
     "test": "mocha"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -w",
     "test_quick_sort": "mocha test/quick_sort.js -w",
-    "test_two_sum":"mocha test/two_sum.js -w"
+    "test_two_sum":"mocha test/two_sum.js -w",
+    "test_the_longtest_sub_string":"mocha test/longest_sub_string -w"
   },
   "repository": {
     "type": "git",
