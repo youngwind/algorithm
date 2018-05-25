@@ -54,3 +54,21 @@ function dynKnapsack(total, weight, value) {
 dynKnapsack(total, weight, value);
 
 dynKnapsack(16, [3, 4, 7, 8, 9], [4, 5, 10, 11, 13]);
+
+function recKnapsack(total, weight, value, n) {
+    if (n === 0 || total === 0) {
+        return 0;
+    }
+    if (weight[n - 1] > total) {
+        return recKnapsack(total, weight, value, n - 1);
+    } else {
+        return Math.max(
+            recKnapsack(total, weight, value, n - 1),
+            value[n - 1] + recKnapsack(total - weight[n - 1], weight, value, n - 1)
+        )
+    }
+}
+
+console.log('递归的结果', recKnapsack(total, weight, value, 4));
+console.log('递归的结果', recKnapsack(16, [3, 4, 7, 8, 9], [4, 5, 10, 11, 13], 5));
+
